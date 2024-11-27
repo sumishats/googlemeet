@@ -3,47 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google meet</title>
+    <title>Google Meet</title>
     <link rel="icon" href="google-meet-logo.png" type="image/icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="header-left">
             <img class="header-left-img" src="header-left-img.png" alt="Logo">
             <p>Meet</p>
         </div>
-
         <div class="header-right">
             <div class="header-right-time">
-                 <p>10:00. Thu, 21 Nov</p>
+                <p>10:00. Thu, 21 Nov</p>
             </div>
-              <img class="header-right-img" src="header-right-img.png" alt="Profile">
+            <img class="header-right-img" src="header-right-img.png" alt="Profile">
         </div>
     </header>
-    
-    <div class="container">
-        <div class="first-content">
-            <h1 class="first-heading">Video calls and meetings for everyone</h1>
-            <p class="">Connect, collaborate and celebrate from anywhere with Google Meet</p>
-            <div class="new-meeting-container">
-                 <button class="new-meeting-button">New Meeting</button>
-                 <input class="new-meeting-input" type="text" placeholder="Enter a code or link">
-            </div>
-            <div>
-                <hr>
-                <a class="end" href="">Learn more <span> about Google Meet</span></a> 
-            </div>
-        </div>
 
-        <div class="second-content">
-            <img class="left-content-img" src="left-content-img.svg" alt="">
-            <h2 class="second-heading">Get a link that you can share</h2>
-            <p class="second-content-p">Click <strong>New meeting</strong> to get a link that you can send to </p>
-            <p class="last-p">people that you want to meet with</p>
-            
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- First Session -->
+            <div class="col-12 col-md-6 first-session mt-4">
+                <h1 class="first-heading">Video calls and meetings for everyone</h1>
+                <p class="first-p  ">Connect, collaborate, and celebrate from anywhere with Google Meet.</p>
+                <div class="new-meeting-container  ">
+                    <button class="new-meeting-button bg-primary border-0 text-white rounded-2 mt-4 ">New Meeting</button>
+                    <input class="new-meeting-input rounded border-1 text-center" type="text" placeholder="Enter a code or link">
+                    <hr>
+                    <a class="end mb-3" href="#">Learn more <span>about Google Meet</span></a>
+                </div>
+            </div>
+
+            <!-- Second Session -->
+            <div class="col-12 col-md-6 second-session mt-4">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="left-content-img.svg" class="d-block w-100" alt="...">
+                            <h2 class="second-heading">Get a link that you can share</h2>
+                            <p class="second-content-p">Click <strong>New meeting</strong> to get a link you can share.</p>
+                            <p class="last-p">Send the link to people you want to meet with.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="left-content-img2.svg" class="d-block w-100" alt="...">
+                            <h2 class="second-heading text-center">Plan ahead</h2>
+                            <p class="second-content-p">Use <strong>New meeting</strong> to schedule meetings in Google Calendar.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="left-content-img3.svg" class="d-block w-100" alt="...">
+                            <h2 class="second-heading text-center">Your meeting is safe</h2>
+                            <p class="second-content-p">No one can join a meeting unless invited or admitted by the host.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
